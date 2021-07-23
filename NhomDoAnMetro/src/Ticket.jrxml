@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ticket" pageWidth="460" pageHeight="530" columnWidth="420" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a99fd9f0-e488-4d13-8fb9-a7c0e05b08c1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DatabaseUIT"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from HOADON]]>
+	</queryString>
+	<field name="HOTEN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HOTEN"/>
+		<property name="com.jaspersoft.studio.field.label" value="HOTEN"/>
+	</field>
+	<field name="GIOITINH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GIOITINH"/>
+		<property name="com.jaspersoft.studio.field.label" value="GIOITINH"/>
+	</field>
+	<field name="SOCMND" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SOCMND"/>
+		<property name="com.jaspersoft.studio.field.label" value="SOCMND"/>
+	</field>
+	<field name="QUOCTICH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="QUOCTICH"/>
+		<property name="com.jaspersoft.studio.field.label" value="QUOCTICH"/>
+	</field>
+	<field name="SDT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SDT"/>
+		<property name="com.jaspersoft.studio.field.label" value="SDT"/>
+	</field>
+	<field name="MAVE" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="MAVE"/>
+		<property name="com.jaspersoft.studio.field.label" value="MAVE"/>
+	</field>
+	<field name="MASOGHE" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="MASOGHE"/>
+		<property name="com.jaspersoft.studio.field.label" value="MASOGHE"/>
+	</field>
+	<field name="GADI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GADI"/>
+		<property name="com.jaspersoft.studio.field.label" value="GADI"/>
+	</field>
+	<field name="GADEN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GADEN"/>
+		<property name="com.jaspersoft.studio.field.label" value="GADEN"/>
+	</field>
+	<field name="PHITRA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PHITRA"/>
+		<property name="com.jaspersoft.studio.field.label" value="PHITRA"/>
+	</field>
+	<field name="LOAI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LOAI"/>
+		<property name="com.jaspersoft.studio.field.label" value="LOAI"/>
+	</field>
+	<field name="GIODI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GIODI"/>
+		<property name="com.jaspersoft.studio.field.label" value="GIODI"/>
+	</field>
+	<field name="GIODEN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GIODEN"/>
+		<property name="com.jaspersoft.studio.field.label" value="GIODEN"/>
+	</field>
+	<field name="NGAYDI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NGAYDI"/>
+		<property name="com.jaspersoft.studio.field.label" value="NGAYDI"/>
+	</field>
+	<field name="NGAYVE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NGAYVE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NGAYVE"/>
+	</field>
+	<field name="NGAYBAN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NGAYBAN"/>
+		<property name="com.jaspersoft.studio.field.label" value="NGAYBAN"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="0" width="240" height="70" uuid="304c6897-1271-4f47-80ff-ec046376383e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB Demi" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VÉ TÀU METRO UIT
+(Ticket)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="70" width="170" height="44" uuid="53ed264e-4925-4d54-ac5f-b1d78d0e69e8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Địa chỉ:KP5,UIT.
+Liên hệ:0963639201]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="371" splitType="Stretch">
+			<textField>
+				<reportElement x="70" y="0" width="140" height="30" uuid="bea61bb4-29c9-46b6-a426-2f6b2eb2db3d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HOTEN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="120" height="30" uuid="8509fe94-2312-4faa-85f3-63c45afd8534"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GIOITINH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="40" width="140" height="30" uuid="24c289f4-f6f0-4d7c-b3de-6086b721c4c4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SOCMND}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="40" width="120" height="30" uuid="6fcc7d0c-2247-4c3a-826e-0f7f9409a43b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{QUOCTICH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="80" width="140" height="30" uuid="c15030a8-4602-4204-aa8b-a9123bd34724"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SDT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="120" width="140" height="30" uuid="cda7de74-c6de-4d84-bdad-c6690615a8e9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MAVE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="120" width="120" height="30" uuid="768a95e4-a8ba-4dd4-9794-c315ad37f845"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MASOGHE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="160" width="140" height="30" uuid="879265c9-4d88-4737-8c02-511817fc5b11"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GADI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="160" width="120" height="30" uuid="8695bf8b-4873-450e-87f9-c056ae1136f2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GADEN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="200" width="120" height="30" uuid="cf22109c-709a-45b4-b572-1c1abec9ac42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PHITRA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="71" y="200" width="139" height="30" uuid="cbef6553-9336-4f9f-b50a-ca87e0b0eb4a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LOAI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="240" width="140" height="30" uuid="5ec27d7d-8f45-46d7-a4e8-950a502f35a0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GIODI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="240" width="120" height="30" uuid="573e3c87-e71a-42f6-85b8-d7a3e2d8fd27"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GIODEN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="280" width="140" height="30" uuid="58b7b8ca-2ad3-4076-bc54-8f5b6d85a08b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NGAYDI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="280" width="120" height="30" uuid="496eac95-2855-4808-99a6-2f27ac7173d0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NGAYVE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="320" width="140" height="30" uuid="84f5724c-f920-4e83-a6ca-79b5fa722dba"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NGAYBAN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="0" width="80" height="30" uuid="3ecf308a-1503-4912-9b00-db71a329d478"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Họ Tên      :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="40" width="80" height="30" uuid="5bd56b4f-b03e-4aba-9851-1ba7d48b7999"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CMND        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="80" width="80" height="30" uuid="58b01528-fc17-498c-9af9-bb700de926b7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SDT            :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-9" y="120" width="80" height="30" uuid="5fac633c-8848-4a5b-9782-3fa3153ad4c4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã vé         :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-9" y="160" width="80" height="30" uuid="af6e57bb-af4b-4410-aa94-b90f7e0d421b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ga đi          :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="200" width="81" height="30" uuid="51e3237e-f450-4ae5-8b57-2d1cbeaa463f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loại            :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-9" y="240" width="80" height="30" uuid="56b9668b-182e-458f-b22b-933618165288"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giờ đi        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-9" y="280" width="80" height="30" uuid="1e4841d5-b194-4ca5-b5f7-cfda545ece7b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày đi      :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="320" width="80" height="30" uuid="9e14810d-f11b-4dab-a72e-22e2579c16b8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày bán   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="200" width="80" height="30" uuid="5bdbf461-b397-44b9-9878-129c51588222"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phí vé        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="240" width="80" height="30" uuid="588e45aa-ef74-432e-8a98-3ff27699f7bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giờ đến     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="280" width="80" height="30" uuid="3f5bfd9c-d115-4243-873d-d7d62df15f7d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày về     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="40" width="80" height="30" uuid="498d887b-100b-48fe-86d4-ac4dddf46fb6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quốc Tịch :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="120" width="80" height="30" uuid="e74b82fa-c79a-4b12-8903-45c8b1082cff"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số ghế       :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="160" width="80" height="30" uuid="6a17631b-0e47-4877-ad63-744e2c9760ad"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ga đến       :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="80" height="30" uuid="9135e7d2-2838-43c9-a266-8fefd1951941"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giới tính    : ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

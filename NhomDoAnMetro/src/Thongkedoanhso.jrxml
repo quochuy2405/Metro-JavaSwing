@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Thongkedoanhso" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a3b1803b-1e14-47cc-a0d1-75a8776d2b8f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DatabaseUIT"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT GADI,GADEN,COUNT(*),NGAYBANVE,SUM(TIENTRA)
+FROM  DOAN1.LICHSUVE
+GROUP BY NGAYBANVE,GADI,GADEN]]>
+	</queryString>
+	<field name="GADI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GADI"/>
+		<property name="com.jaspersoft.studio.field.label" value="GADI"/>
+	</field>
+	<field name="GADEN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GADEN"/>
+		<property name="com.jaspersoft.studio.field.label" value="GADEN"/>
+	</field>
+	<field name="COUNT(*)" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="COUNT(*)"/>
+		<property name="com.jaspersoft.studio.field.label" value="COUNT(*)"/>
+	</field>
+	<field name="NGAYBANVE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NGAYBANVE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NGAYBANVE"/>
+	</field>
+	<field name="SUM(TIENTRA)" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SUM(TIENTRA)"/>
+		<property name="com.jaspersoft.studio.field.label" value="SUM(TIENTRA)"/>
+	</field>
+	<group name="GADI">
+		<groupExpression><![CDATA[$F{GADI}]]></groupExpression>
+	</group>
+	<group name="GADEN">
+		<groupExpression><![CDATA[$F{GADEN}]]></groupExpression>
+	</group>
+	<group name="COUNT(*)">
+		<groupExpression><![CDATA[$F{COUNT(*)}]]></groupExpression>
+	</group>
+	<group name="NGAYBANVE">
+		<groupExpression><![CDATA[$F{NGAYBANVE}]]></groupExpression>
+	</group>
+	<group name="SUM(TIENTRA)">
+		<groupExpression><![CDATA[$F{SUM(TIENTRA)}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="10" width="490" height="61" uuid="fc7f5618-4bd3-46ca-8fc0-fb5cfece80f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BẢNG THỐNG KÊ DOANH SỐ CÔNG TY
+ METRO ELECTRIC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<staticText>
+				<reportElement x="30" y="19" width="100" height="31" uuid="7aec3e89-f26b-4d46-b4c0-db03060ddb6f"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GA ĐI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="19" width="100" height="31" uuid="a1084052-6735-457e-aadd-09e1535af180"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GA ĐẾN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="19" width="80" height="31" uuid="ef5e564f-a708-41db-b259-dca479b2b7a9"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SỐ VÉ BÁN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="19" width="111" height="31" uuid="f364610a-0c82-4f11-bec1-d6085b5a0700"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NGÀY BÁN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="19" width="140" height="31" uuid="22eef48c-4e76-420c-b7c7-9e420c25c771"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOANH SỐ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="32">
+			<textField>
+				<reportElement x="30" y="0" width="100" height="30" uuid="53a1fc47-64de-41b5-a64f-34b8c0662236"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GADI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="9be07392-a959-4f26-862a-f635c75caf7f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GADEN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="80" height="30" uuid="04e2ed05-437b-4ffd-9c53-1421f4d5cc52"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COUNT(*)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="0" width="110" height="30" uuid="c8a9bfdd-1b12-457c-952c-e563c20274cf"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NGAYBANVE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="0" width="139" height="30" uuid="5e0ff3ae-6919-451c-bb42-5b7e8f0e38bb"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUM(TIENTRA)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
